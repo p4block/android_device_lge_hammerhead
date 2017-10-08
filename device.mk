@@ -362,6 +362,14 @@ PRODUCT_COPY_FILES += \
     device/lge/hammerhead/init.hammerhead.diag.rc.user:root/init.hammerhead.diag.rc
 endif
 
+# GAPPS
+GAPPS_VARIANT := pico
+PRODUCT_PACKAGES += CameraGoogle
+PRODUCT_PACKAGES += PixelLauncherIcons
+GAPPS_EXCLUDED_PACKAGES := GooglePackageInstaller
+
+$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
+
 # setup dalvik vm configs.
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
