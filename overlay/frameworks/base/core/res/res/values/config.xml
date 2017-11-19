@@ -324,4 +324,7 @@
     <bool name="config_dozeAfterScreenOff">true</bool>
     <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
 
+    <!-- Round icons -->
+    <bool name="config_useRoundIcon">true</bool>
+
 </resources>
