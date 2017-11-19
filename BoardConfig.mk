@@ -124,4 +124,6 @@ TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS:= true
 BOARD_USES_CYANOGEN_HARDWARE := true
 BOARD_HARDWARE_CLASS := hardware/cyanogen/cmhw
 
+MALLOC_SVELTE := true
+
 -include vendor/lge/hammerhead/BoardConfigVendor.mk
